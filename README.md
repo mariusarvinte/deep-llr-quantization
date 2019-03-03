@@ -1,2 +1,2 @@
 # deep-llr-quantization
-Source code for the "Deep Log-Likelihood Ratio Compression" paper submitted to EUSIPCO 2019
+Source code for the "Deep Log-Likelihood Ratio Quantization" paper submitted to EUSIPCO 2019
