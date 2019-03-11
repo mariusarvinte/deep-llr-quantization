@@ -15,4 +15,4 @@ Source code for the "Deep Log-Likelihood Ratio Quantization" paper submitted to 
 
 5. Run the Matlab files 'single_transmission.m' or 'multiple_transmission' in 'Test-in' mode to evaluate the performance.
 
-Pretrained DNNs are available in the 'results' folder, allowing to skip steps 1-2.
+Pretrained DNNs are available in the 'results' folder, allowing to skip steps 1-2. We also include a trained Deep Autoencoder for 64-QAM, for which performance results are not included in the paper.
