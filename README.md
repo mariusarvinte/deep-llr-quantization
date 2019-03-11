@@ -1,7 +1,7 @@
 # deep-llr-quantization
 Source code for the "Deep Log-Likelihood Ratio Quantization" paper submitted to EUSIPCO 2019.
-Marius Arvinte, Ahmed H. Tewfik and Sriram Vishwanath
-University of Texas at Austin
+
+**Marius Arvinte, Ahmed H. Tewfik and Sriram Vishwanath**, University of Texas at Austin.
 
 # Instructions
 
