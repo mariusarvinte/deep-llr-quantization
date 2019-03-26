@@ -14,6 +14,11 @@ import numpy as np
 import scipy.io as sio
 from tqdm import tqdm
 
+# Weighted MSE loss function
+def sample_weighted_mse(y_true, y_pred):
+    eps = 1e-4
+    return K.mean(1/(K.abs(y_true) + eps) * K.square(y_pred - y_true), axis=-1)
+
 # Seed and train the autoencoder
 def train_autoencoder(modSize, snrMin, snrMax, local_seed, batch_size=2**16, num_epochs=6000):
     # Load .mat files containing Matlab-generated training collection
