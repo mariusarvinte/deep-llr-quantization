@@ -10,6 +10,7 @@ from keras.models import Model, load_model
 from keras.callbacks import ReduceLROnPlateau, EarlyStopping
 from keras.optimizers import Adadelta
 from keras.initializers import glorot_uniform
+from keras import backend as K
 import numpy as np
 import scipy.io as sio
 from tqdm import tqdm
@@ -75,7 +76,7 @@ def train_autoencoder(modSize, snrMin, snrMax, local_seed, batch_size=2**16, num
     autoencoder.summary()
     
     # Final model
-    autoencoder.compile(optimizer=adadelta, loss='sample_weighted_mse')
+    autoencoder.compile(optimizer=adadelta, loss=sample_weighted_mse)
     
     # Callbacks
     filestub = '_Rayleigh_mod' + str(modSize) + '_seed' + str(local_seed) + '_snr' + str(snrMin) + 'to' + str(snrMax)
